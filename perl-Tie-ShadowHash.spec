@@ -22,7 +22,7 @@ Tie::ShadowHash ³±czy wiele danych w hasz.
 %setup -q -n ShadowHash-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
