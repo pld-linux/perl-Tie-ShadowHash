@@ -24,7 +24,7 @@ Tie::ShadowHash ³±czy wiele danych w hasz.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
