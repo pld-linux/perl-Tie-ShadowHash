@@ -3,11 +3,11 @@ Summary:	Tie::ShadowHash perl module
 Summary(pl):	Modu³ perla Tie::ShadowHash
 Name:		perl-Tie-ShadowHash
 Version:	0.07
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Tie/ShadowHash-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -22,7 +22,8 @@ Tie::ShadowHash ³±czy wiele danych w hasz.
 %setup -q -n ShadowHash-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -36,5 +37,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README TODO
-%{perl_sitelib}/Tie/ShadowHash.pm
+%{perl_vendorlib}/Tie/ShadowHash.pm
 %{_mandir}/man3/*
