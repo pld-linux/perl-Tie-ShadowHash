@@ -7,6 +7,7 @@ Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Tie/ShadowHash-%{version}.tar.gz
+# Source0-md5:	aecf81359cabd38cb139cc0c6e8ab0f8
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
 BuildArch:	noarch
