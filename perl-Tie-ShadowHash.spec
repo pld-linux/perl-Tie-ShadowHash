@@ -3,7 +3,7 @@ Summary:	Tie::ShadowHash perl module
 Summary(pl):	Modu³ perla Tie::ShadowHash
 Name:		perl-Tie-ShadowHash
 Version:	0.07
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Tie/ShadowHash-%{version}.tar.gz
