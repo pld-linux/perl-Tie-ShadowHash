@@ -1,10 +1,15 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	Tie::ShadowHash perl module
 Summary(pl):	Modu³ perla Tie::ShadowHash
 Name:		perl-Tie-ShadowHash
 Version:	0.07
 Release:	2
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Tie/ShadowHash-%{version}.tar.gz
 # Source0-md5:	aecf81359cabd38cb139cc0c6e8ab0f8
@@ -27,10 +32,13 @@ Tie::ShadowHash ³±czy wiele danych w hasz.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
