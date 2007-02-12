@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Tie::ShadowHash perl module
-Summary(pl):	Modu³ perla Tie::ShadowHash
+Summary(pl.UTF-8):   ModuÅ‚ perla Tie::ShadowHash
 Name:		perl-Tie-ShadowHash
 Version:	0.07
 Release:	3
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Tie::ShadowHash merges multiple data sources into a hash.
 
-%description -l pl
-Tie::ShadowHash ³±czy wiele danych w hasz.
+%description -l pl.UTF-8
+Tie::ShadowHash Å‚Ä…czy wiele danych w hasz.
 
 %prep
 %setup -q -n ShadowHash-%{version}
