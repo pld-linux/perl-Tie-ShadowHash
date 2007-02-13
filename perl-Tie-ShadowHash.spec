@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Tie::ShadowHash perl module
-Summary(pl.UTF-8):   Moduł perla Tie::ShadowHash
+Summary(pl.UTF-8):	Moduł perla Tie::ShadowHash
 Name:		perl-Tie-ShadowHash
 Version:	0.07
 Release:	3
